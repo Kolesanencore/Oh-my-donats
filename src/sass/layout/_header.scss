@@ -1,0 +1,271 @@
+// *****************************
+//     Header section
+// ****************************
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  .header-container {
+    position: relative;
+  
+    background-color: #e5e2e3;
+  
+    padding-top: 16px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+  
+    @media screen and(min-width: 480px) {
+      padding-top: 16px;
+      padding-bottom: 8px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    @media screen and(min-width: 768px) {
+      padding-top: 24px;
+      padding-bottom: 43px;
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+    @media screen and(min-width: 1200px) {
+      padding-top: 36px;
+      padding-bottom: 90px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  
+  .overlay {
+    margin: 0 auto;
+  
+    max-width: 320px;
+    height: 312px;
+  
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0)
+      ),
+      url(../images/mobile/glazed-donuts-in-boxes.jpg);
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0),
+          rgba(47, 48, 58, 0)
+        ),
+        url('../images/desktop/glazed-donuts-in-boxes@2.jpg');
+    }
+  
+    @media screen and(min-width:768px) {
+      max-width: 768px;
+      min-height: 345px;
+  
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0),
+          rgba(47, 48, 58, 0)
+        ),
+        url('../images/tablet/glazed-donuts-in-boxes.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0),
+            rgba(47, 48, 58, 0)
+          ),
+          url('../images/tablet/glazed-donuts-in-boxes@2.jpg');
+      }
+  
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  
+    @media screen and(min-width:1200px) {
+      max-width: 1280px;
+      min-height: 556px;
+  
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0),
+          rgba(47, 48, 58, 0)
+        ),
+        url('../images/desktop/glazed-donuts-in-boxes.jpg');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0),
+            rgba(47, 48, 58, 0)
+          ),
+          url('../images/desktop/glazed-donuts-in-boxes@2.jpg');
+      }
+      box-shadow: none;
+    }
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-desktop {
+    display: flex;
+    margin-left: 47px;
+  
+    &__item {
+      text-align: center;
+      padding: 4px 10px 4px 10px;
+  
+      &:hover {
+        color: #ffffff;
+        background-color: #f3848c;
+        background: linear-gradient(
+          180deg,
+          rgba(248, 110, 103, 0.63) 0%,
+          rgba(253, 86, 143, 0.86) 100%
+        );
+        box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+
+      }
+    }
+  
+    @media screen and(max-width: 1199px) {
+      display: none;
+    }
+  }
+  
+  .logo-style {
+    position: relative;
+    z-index: 3;
+    width: 108px;
+    @media screen and(min-width: 480px) {
+      width: 108px;
+    }
+    @media screen and(min-width: 768px) {
+      width: 106px;
+    }
+    @media screen and(min-width: 1200px) {
+      width: 158px;
+    }
+  }
+  
+  // *******************************
+  // Mobile menu
+  
+  // mobile menu button
+  
+  .menu-button {
+    position: absolute;
+    z-index: 3;
+  
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    @media screen and(min-width: 1200px) {
+      display: none;
+    }
+    &:hover {
+      fill: #000000;
+    }
+  }
+  
+  .menu-button .icon-cross {
+    display: none;
+  }
+  
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+  
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  // *********************************
+  
+  // mobile menu container
+  
+  .mobile-menu-container {
+    @media screen and(max-width: 1199px) {
+      display: none;
+      &.is-open {
+        display: flex;
+        align-items: center;
+      }
+  
+      position: absolute;
+      z-index: 2;
+      flex-direction: column;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+  
+      padding-top: 102px;
+  
+      background-color: #e5e2e3;
+    }
+    @media screen and(min-width: 768px) {
+      padding-top: 130px;
+    }
+  
+    @media screen and(min-width: 1200px) {
+      display: none;
+    }
+  }
+  
+  // ***********************************
+  
+  // mobile menu links
+  
+  .nav-mobile {
+    &__item {
+      text-align: center;
+      padding: 10px 28px 10px 28px;
+  
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.25;
+  
+      @media screen and(min-width: 768px) {
+        font-size: 40px;
+        line-height: 1.23;
+      }
+  
+      &:hover {
+        color: #ffffff;
+        background-color: #f3848c;
+        background: linear-gradient(
+          180deg,
+          rgba(248, 110, 103, 0.63) 0%,
+          rgba(253, 86, 143, 0.86) 100%
+        );
+        box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+      }
+    }
+  }
+  
+  // ***************************
+  //     END Header section
+  // ****************************
+  
