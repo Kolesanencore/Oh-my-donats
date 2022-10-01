@@ -1,0 +1,44 @@
+.slider {
+  height: 712px;
+  &__item {
+    height: 570px;
+    position: relative;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  &__img-wrapper {
+    height: 285px;
+    width: 285px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2e2520;
+    cursor: default;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    position: absolute;
+    text-align: center;
+    display: none;
+    bottom: 195px;
+  }
+}
+
+.rate {
+  margin-bottom: 8px;
+  cursor: default;
+}
