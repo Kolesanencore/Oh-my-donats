@@ -1,6 +1,15 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 
+
+<symbol id="bagel-hero" viewBox="0 0 150 150">
+<path d="M150 75c0 41.421-33.579 75-75 75S0 116.421 0 75 33.579 0 75 0s75 33.579 75 75ZM28.996 75c0 25.408 20.596 46.004 46.004 46.004 25.408 0 46.004-20.596 46.004-46.004 0-25.408-20.596-46.004-46.004-46.004-25.408 0-46.004 20.596-46.004 46.004Z"  fill-opacity=".12"/>
+</symbol>
+
+<symbol id="bagel-menu" viewBox="0 0 100 100">
+<path d="M100 50c0 27.614-22.386 50-50 50S0 77.614 0 50 22.386 0 50 0s50 22.386 50 50Zm-86.97 0c0 20.418 16.552 36.97 36.97 36.97S86.97 70.418 86.97 50 70.418 13.03 50 13.03 13.03 29.582 13.03 50Z" fill-opacity=".12"/>
+</symbol>
+
 <symbol id="icon-mmenu-open" viewBox="0 0 40 40">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
 </symbol>

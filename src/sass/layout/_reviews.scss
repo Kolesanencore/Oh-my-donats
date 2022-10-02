@@ -1,0 +1,64 @@
+.reviews {
+  background-image: url('../images/desktop/reviews/bgd.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #2e2520;
+    margin-bottom: 28px;
+  }
+
+  &__slider {
+    margin-bottom: 27px;
+  }
+
+  &__pagination {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: -36px;
+    font-size: 0;
+    width: 35px;
+    height: 2px;
+    background-color: $primary-pink-color;
+    border: none;
+  }
+
+  .slick-prev {
+    left: calc(50% - 60px);
+  }
+
+  .slick-next {
+    left: calc(50% + 24px);
+  }
+
+  .slick-current {
+    .slider__text {
+      display: block;
+    }
+    .slider__img-wrapper {
+      width: 394px;
+      height: 394px;
+      @media (max-width: 1200px) {
+        height: 336px;
+        width: 336px;
+      }
+    }
+
+    &.slider__item {
+      justify-content: center;
+    }
+  }
+}
