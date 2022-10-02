@@ -1,0 +1,105 @@
+.footer {
+    padding-top: 14px;
+    position: relative;
+    padding-bottom: 50px;
+
+    &::after {
+        content: '';
+
+        @media screen and (max-width: 767px) {
+            background-image: url(../images/mobile/footer/footer-donuts.png);
+            background-size: cover;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/mobile/footer/footer-donuts@2x.png);
+            }
+
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            bottom: 10%;
+            left: 45%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 19px;
+        padding-bottom: 101px;
+    }
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 100px;
+    }
+}
+
+.social-link__item {
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+.social-link__link {
+    &:hover,
+    &:focus,
+    &:active {
+        fill: #f3848c;
+    }
+}
+
+.address-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-list__item {
+    display: flex;
+    align-items: center;
+}
+
+.address-list__icon {
+    margin-right: 4px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.address-list__link {
+    display: flex;
+    align-items: center;
+
+    color: #2e2520;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        fill: #f3848c;
+        color: #f3848c;
+    }
+}
+
+footer picture .donuts-img {
+    width: 60px;
+    margin-left: 137px;
+    margin-right: 123px;
+}
