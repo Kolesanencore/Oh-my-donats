@@ -26,11 +26,13 @@
   font-weight: 600;
   line-height: 1.21;
 
-  font-size: 8vw;
+  font-size: 7vw;
 
-  @media screen and(min-width: 320px) {
+  @media screen and(min-width: 330px) {
     margin-top: 20px;
     max-width: 280px;
+    letter-spacing: -0.03em;
+
     font-size: 28px;
   }
 
@@ -110,6 +112,9 @@
   &:hover {
     color: #f3848c;
     background-color: #ffffff;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:active {
     background-color: #f3848c;
@@ -149,6 +154,9 @@
   &__link:focus,
   &__link:active {
     fill: #f3848c;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

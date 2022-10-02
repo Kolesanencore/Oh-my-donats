@@ -137,6 +137,9 @@ nav {
         rgba(253, 86, 143, 0.86) 100%
       );
       box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -177,7 +180,7 @@ nav {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  @media screen and(min-width: 768px){
+  @media screen and(min-width: 768px) {
     top: 32px;
     right: 32px;
   }
@@ -200,13 +203,17 @@ nav {
 .menu-button.is-open .icon-menu {
   display: none;
 }
+
 // *********************************
 
 // mobile menu container
-
+.mobile-menu-container.is-open {
+  transform: translateY(0%);
+}
 .mobile-menu-container {
   @media screen and(max-width: 1199px) {
     display: none;
+
     &.is-open {
       display: flex;
       align-items: center;
@@ -224,6 +231,10 @@ nav {
     padding-top: 102px;
 
     background-color: #e5e2e3;
+
+    transform: translateY(-110vh);
+    transition: transform 250ms;
+    // transition-delay: 500ms;
   }
   @media screen and(min-width: 768px) {
     padding-top: 130px;
@@ -233,6 +244,7 @@ nav {
     display: none;
   }
 }
+
 .bagel-menu1 {
   position: absolute;
   fill: #d68362;
@@ -337,17 +349,17 @@ nav {
     font-size: 28px;
     line-height: 1.25;
 
-    &:not(:last-child){
-        margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
 
     @media screen and(min-width: 768px) {
       font-size: 40px;
       line-height: 1.23;
 
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: 40px;
-    }
+      }
     }
 
     &:hover {
@@ -359,6 +371,9 @@ nav {
         rgba(253, 86, 143, 0.86) 100%
       );
       box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
