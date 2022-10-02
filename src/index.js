@@ -34,8 +34,8 @@ $('.slider').slick({
   slidesToScroll: 1,
   infinite: true,
   arrows: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
+  // autoplay: true,
+  // autoplaySpeed: 5000,
   centerMode: true,
   responsive: [
     {
