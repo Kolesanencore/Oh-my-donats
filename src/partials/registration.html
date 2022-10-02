@@ -1,0 +1,51 @@
+<section class="section registration-section" id="registration">
+  <div class="container">
+    <h2 class="title registration-section__title">Registration</h2>
+    <div class="registration-section__overlay">
+      <p class="registration-section__date">
+        May 23, 11:00 <br />
+        New York
+      </p>
+
+      <form class="registration-form">
+        <h3 class="registration-form__title">
+          Apply your personal info for registration
+        </h3>
+        <label class="registration-form__item">
+          <input
+            class="registration-form__name error"
+            type="text"
+            name="user-name"
+            placeholder="Your name"
+            required
+            minlength="2"
+            pattern="^[a-zA-Z]+$"
+          />
+        </label>
+        <label class="registration-form__item">
+          <input
+            class="registration-form__tel error"
+            type="tel"
+            name="user-tel"
+            placeholder="Phone number"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+          />
+        </label>
+        <label class="registration-form__item">
+          <input
+            class="registration-form__email error"
+            type="email"
+            name="user-email"
+            placeholder="Email"
+            required
+          />
+        </label>
+        <button class="button registration-form__button" type="submit">
+          Register
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
