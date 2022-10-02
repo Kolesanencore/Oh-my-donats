@@ -35,6 +35,6 @@ $('.slider').slick({
   infinite: true,
   arrows: true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
   centerMode: true,
 });

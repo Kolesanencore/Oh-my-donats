@@ -28,7 +28,7 @@
 
   .slick-arrow {
     position: absolute;
-    bottom: -30px;
+    bottom: -36px;
     font-size: 0;
     width: 35px;
     height: 2px;
@@ -37,11 +37,11 @@
   }
 
   .slick-prev {
-    left: calc(50% - 30px);
+    left: calc(50% - 60px);
   }
 
   .slick-next {
-    left: calc(50% + 30px);
+    left: calc(50% + 15px);
   }
 
   .slick-center {
@@ -54,7 +54,7 @@
     }
 
     &.slider__item {
-      justify-content: flex-end;
+      justify-content: center;
     }
   }
 }

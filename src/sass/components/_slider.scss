@@ -1,7 +1,6 @@
 .slider {
-  height: 712px;
   &__item {
-    height: 570px;
+    height: 712px;
     position: relative;
     display: flex !important;
     flex-direction: column !important;
@@ -31,10 +30,11 @@
   }
 
   &__text {
+    width: 1001px;
     position: absolute;
     text-align: center;
     display: none;
-    bottom: 195px;
+    bottom: 0px;
   }
 }
 
