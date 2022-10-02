@@ -3,26 +3,26 @@
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
-  &__container {
-    max-width: 320px;
-    width: 100%;
-    margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 
-      max-width: 1280px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   &__title {
     margin-bottom: 5px;
     font-family: 'Montserrat Alternates';
@@ -33,7 +33,7 @@
 
     text-align: center;
 
-    color: #3c322d;
+    color: $primary-text-color;
   }
 
   &__list {
@@ -92,7 +92,7 @@
 
     text-align: center;
 
-    color: #3c322d;
+    color: $primary-text-color;
 
     @media screen and (min-width: 768px) {
     }
@@ -109,7 +109,7 @@
     font-size: 12px;
     line-height: 1.25;
 
-    color: #3c322d;
+    color: $primary-text-color;
 
     @media screen and (min-width: 768px) {
       width: 152px;
@@ -255,4 +255,18 @@
       display: none;
     }
   }
+}
+.element-animation {
+  margin: 2rem 0;
+  font-size: 3rem;
+
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
 }
