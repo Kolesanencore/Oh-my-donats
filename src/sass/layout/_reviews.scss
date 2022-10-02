@@ -41,16 +41,20 @@
   }
 
   .slick-next {
-    left: calc(50% + 15px);
+    left: calc(50% + 24px);
   }
 
-  .slick-center {
+  .slick-current {
     .slider__text {
       display: block;
     }
     .slider__img-wrapper {
       width: 394px;
       height: 394px;
+      @media (max-width: 1200px) {
+        height: 336px;
+        width: 336px;
+      }
     }
 
     &.slider__item {

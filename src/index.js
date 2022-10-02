@@ -34,7 +34,44 @@ $('.slider').slick({
   slidesToScroll: 1,
   infinite: true,
   arrows: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
+  // autoplay: true,
+  // autoplaySpeed: 4000,
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+const reviewsSliderInner = document.querySelector('.slider');
+const reviewsPrevBtn = reviewsSliderInner.querySelector('.slick-prev');
+const reviewsNextBtn = reviewsSliderInner.querySelector('.slick-next');
+const reviewsSlideNow = document.querySelector('.reviews__show-slide');
+console.log(reviewsPrevBtn, reviewsNextBtn, reviewsSlideNow);
+reviewsPrevBtn.addEventListener('click', () => {
+  let currentSlide = $('.slider').slick('slickCurrentSlide');
+  reviewsSlideNow.textContent = currentSlide + 1;
+});
+reviewsNextBtn.addEventListener('click', () => {
+  let currentSlide = $('.slider').slick('slickCurrentSlide');
+  reviewsSlideNow.textContent = currentSlide + 1;
 });
