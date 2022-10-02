@@ -29,8 +29,15 @@ img {
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: $primary-text-color;
+  background: linear-gradient(
+    180.11deg,
+    #e5e2e3 10.73%,
+    #fdfefe 38.02%,
+    #e5e2e3 71.11%,
+    #fdfefe 99.91%
+  );
 }
