@@ -207,20 +207,16 @@ nav {
 // *********************************
 
 // mobile menu container
-
+.mobile-menu-container.is-open {
+  transform: translateY(0%);
+}
 .mobile-menu-container {
   @media screen and(max-width: 1199px) {
-    transform: translateY(-110vh);
-    transition: transform 250ms;
     display: none;
-    transform: translateY(0%);
-
 
     &.is-open {
       display: flex;
       align-items: center;
-
-      transform: translateY(0%);
     }
 
     position: absolute;
@@ -235,6 +231,10 @@ nav {
     padding-top: 102px;
 
     background-color: #e5e2e3;
+
+    transform: translateY(-110vh);
+    transition: transform 250ms;
+    // transition-delay: 500ms;
   }
   @media screen and(min-width: 768px) {
     padding-top: 130px;
