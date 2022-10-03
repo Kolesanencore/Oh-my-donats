@@ -3,43 +3,51 @@
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
-  &__container {
-    max-width: 320px;
-    width: 100%;
-    margin: 0 auto;
+  padding-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 
-      max-width: 1280px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 45px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &__box-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__title {
     margin-bottom: 5px;
     font-family: 'Montserrat Alternates';
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 1.22;
 
     text-align: center;
 
-    color: #3c322d;
+    color: $primary-text-color;
   }
 
   &__list {
     text-align: center;
     list-style: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-wrap: wrap;
       margin: -10px;
@@ -48,9 +56,6 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: nowrap;
-    }
-    @media screen and (min-width: 1200px) {
-      justify-content: center;
     }
   }
 
@@ -68,14 +73,10 @@
         margin-right: 32px;
       }
     }
-    @media screen and (min-width: 1200px) {
-    }
   }
 
   &__img {
     display: flex;
-    width: 131px;
-    height: 141px;
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -84,39 +85,30 @@
   &__box-title {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
 
     text-align: center;
 
-    color: #3c322d;
-
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-    }
+    color: $primary-text-color;
   }
 
   &__text {
-    width: 100%;
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.25;
 
-    color: #3c322d;
+    color: $primary-text-color;
+    display: flex;
 
     @media screen and (min-width: 768px) {
-      width: 152px;
+      max-width: 152px;
       font-size: 14px;
     }
     @media screen and (min-width: 1200px) {
-      width: 181px;
+      justify-content: center;
+      max-width: 181px;
       font-size: 16px;
     }
   }
@@ -255,4 +247,17 @@
       display: none;
     }
   }
+}
+.element-animation {
+  margin: 2rem 0;
+  font-size: 3rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
 }

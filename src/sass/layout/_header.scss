@@ -102,7 +102,7 @@ nav {
     }
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and  (max-width: 1199px) {
     display: none;
   }
 }
@@ -111,13 +111,13 @@ nav {
   position: relative;
   z-index: 3;
   width: 108px;
-  @media screen and (min-width: 480px) {
+  @media screen and  (min-width: 480px) {
     width: 108px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and  (min-width: 768px) {
     width: 106px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and  (min-width: 1200px) {
     width: 158px;
   }
 }
@@ -139,11 +139,11 @@ nav {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
+  @media screen and  (min-width: 768px) {
     top: 32px;
     right: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and  (min-width: 1200px) {
     display: none;
   }
   &:hover {
@@ -197,7 +197,7 @@ nav {
     transform: translateY(-150%);
     transition: transform 250ms;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and  (min-width: 768px) {
     padding-top: 130px;
 
     background-image: url('../images/tablet/bg-menu.png');
@@ -206,7 +206,7 @@ nav {
     background-size:cover ;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and  (min-width: 1200px) {
     display: none;
   }
 }
@@ -230,7 +230,7 @@ nav {
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and  (min-width: 768px) {
       font-size: 40px;
       line-height: 1.23;
 

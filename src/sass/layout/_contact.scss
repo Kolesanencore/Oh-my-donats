@@ -1,0 +1,231 @@
+.contact-section {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 14px;
+
+    @media screen and (min-width: 678px) {
+        padding-top: 34px;
+        padding-bottom: 15px;
+    }
+}
+
+.contact-mobile-big-circle {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: -1%;
+        left: 14%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-mobile-small-circle {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        z-index: -1;
+        top: 33%;
+        left: 76%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-tablet-circle {
+    @media screen and (max-width: 767px) {
+       display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        fill: rgba(60, 50, 45, 0.12);
+        left: 87%;
+        top: 20%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.contact-desktop-big-circle {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        left: 35%;
+        top: -9%;
+    }
+}
+
+.contact-desktop-middle-circle {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        left: 75%;
+        top: 35%;
+    }
+}
+
+.contact-desktop-small-circle {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        fill: rgba(60, 50, 45, 0.12);
+        left: 30%;
+        top: 75%;
+    }
+}
+
+.contact-section__title {
+    margin-bottom: 27px;
+    text-align: center;
+    
+    color: #2E2520;
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 32px;
+        }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        color: #000000;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form__title {
+    margin-bottom: 16px;
+
+    color: #2e2520;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 27px;
+        color: #000000;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+
+        color: #2e2520;
+
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+.contact-form__item {
+    @media screen and (max-width: 767px) {
+        max-width: 280px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 394px;
+    }
+}
+
+.contact-form__email,
+.contact-form__question {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+
+    &:focus {
+        outline: none;
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 100%;
+        color: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #000000;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        color: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #3C322D;
+        
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.contact-form__button {
+    width: 145px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid #f3848c;
+    background-color: #f3848c;
+    color: #ffffff;
+    box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
+    text-align: center;
+
+    &:hover,
+    &:focus {
+        color: #f3848c;
+        background-color: #ffffff;
+    }
+
+    &:active {
+        background-color: #f3848c;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25),
+            10px 15px 25px rgba(232, 183, 183, 0.45);
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 15px;
+    }
+}
