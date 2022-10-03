@@ -1,10 +1,90 @@
 .contact-section {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 14px;
 
     @media screen and (min-width: 678px) {
         padding-top: 34px;
         padding-bottom: 15px;
+    }
+}
+
+.contact-mobile-big-circle {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: -1%;
+        left: 14%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-mobile-small-circle {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        z-index: -1;
+        top: 33%;
+        left: 76%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-tablet-circle {
+    @media screen and (max-width: 767px) {
+       display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        fill: rgba(60, 50, 45, 0.12);
+        left: 87%;
+        top: 20%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.contact-desktop-big-circle {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        left: 35%;
+        top: -9%;
+    }
+}
+
+.contact-desktop-middle-circle {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        left: 75%;
+        top: 35%;
+    }
+}
+
+.contact-desktop-small-circle {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        fill: rgba(60, 50, 45, 0.12);
+        left: 30%;
+        top: 75%;
     }
 }
 
@@ -17,12 +97,11 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.2;
     
     @media screen and (min-width: 768px) {
         font-weight: 500;
         font-size: 32px;
-        line-height: 39px;
         }
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -42,7 +121,7 @@
     color: #2e2520;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 27px;
@@ -55,7 +134,7 @@
         color: #2e2520;
 
         font-size: 18px;
-        line-height: 22px;
+        line-height: 1.2;
     }
 }
 
@@ -80,7 +159,7 @@
 .contact-form__question {
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
 
     background-color: transparent;
     border-top: transparent;
@@ -94,7 +173,7 @@
     @media screen and (max-width: 1199px) {
         width: 100%;
         color: rgba(0, 0, 0, 0.5);
-        border-bottom-color: #000000;
+        border-bottom: 1px solid #000000;
 
         &::placeholder {
             color: rgba(0, 0, 0, 0.5);
@@ -104,10 +183,10 @@
     @media screen and (min-width: 1200px) {
         width: 100%;
         color: rgba(0, 0, 0, 0.5);
-        border-bottom-color: #3C322D;
+        border-bottom: 1px solid #3C322D;
         
         &::placeholder {
-            color: rgba(0, 0, 0, 0.5);;
+            color: rgba(0, 0, 0, 0.5);
         }
     }
 }
