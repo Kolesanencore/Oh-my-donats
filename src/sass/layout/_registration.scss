@@ -1,5 +1,4 @@
 .registration-section {
-    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -11,75 +10,6 @@
     @media screen and (min-width: 1200px) {
         padding-top: 50px;
         padding-bottom: 63px;
-    }
-}
-
-.registration-mobile-circle {
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        right: 2%;
-        z-index: -1;
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
-
-.registration-tablet-small-circle {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        left: 17%;
-        top: -1%;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
-
-.registration-tablet-big-circle {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        top: 91%;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
-
-.registration-desktop-big-circle {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-        position: absolute;
-        fill: rgba(60, 50, 45, 0.12);
-        z-index: -1;
-        top: 69%;
-        left: 4%;
-    }
-}
-
-.registration-desktop-small-circle {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-        position: absolute;
-        z-index: -1;
-        left: 91%;
-        top: 40%;
     }
 }
 
@@ -279,7 +209,6 @@
     }
 
     color: #FFFFFF;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -287,7 +216,6 @@
     @media screen and (min-width: 768px) {
         width: 200px;
         margin-bottom: 16px;
-
         color: #000000;
     }
 
@@ -295,7 +223,6 @@
         margin-bottom: 24px;
         width: 267px;
         color: #3C322D;
-
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -325,15 +252,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-
     background-color: transparent;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-
-    &:focus {
-        outline: none;
-    }
+    outline: 0;
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -362,6 +285,26 @@
 
         &::placeholder {
             color: #2E2520;
+        }
+    }
+
+    &:invalid {
+        border-bottom: 2px solid red;
+    }
+
+    &:valid {
+        border-bottom: 2px solid green;
+    }
+
+    &:not(:focus):invalid {
+        border-bottom: 1px solid #FFFFFF;
+
+        @media screen and (min-width: 768px) {
+            border-bottom: 1px solid #000000;
+        }
+
+        @media screen and (min-width: 1200px) {
+            border-bottom: 1px solid #2E2520;
         }
     }
 }
@@ -397,11 +340,12 @@
 
     @media screen and (min-width: 768px) {
         position: absolute;
-        margin-top: 63px;
-        margin-left: 311px;
+        top: 102px;
+        left: 518px;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-left: 261px;
+        top: 103px;
+        left: 655px;
     }
 }

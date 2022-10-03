@@ -10,10 +10,8 @@
     max-width: 768px;
     display: flex;
   }
-     @media (min-width: 1200px) {
-       
-      
-     }
+  @media (min-width: 1200px) {
+  }
 }
 
 .program__title {
@@ -33,12 +31,12 @@
   @media (min-width: 1200px) {
     padding-top: 62px;
     font-family: 'Montserrat Alternates';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 1.21;
-        color: #3C322D;
-        padding-bottom: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.21;
+    color: #3c322d;
+    padding-bottom: 24px;
   }
 }
 
@@ -47,11 +45,11 @@
   margin-left: auto;
   margin-right: auto;
   @media (min-width: 768px) {
-      padding-top: 46px;
-      max-width: 331px;
-      margin-left: 16px;
-        margin-right: 40;
-    }
+    padding-top: 46px;
+    max-width: 331px;
+    margin-left: 16px;
+    margin-right: 40;
+  }
   @media (min-width: 1200px) {
     display: block;
     min-width: 400px;
@@ -90,7 +88,7 @@
   }
 }
 
-.program__hidden-text{
+.program__hidden-text {
   @media (max-width: 1199px) {
     display: none;
   }
@@ -108,10 +106,9 @@
   @media (min-width: 768px) {
     max-width: 350px;
     padding-top: 65px;
-      margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
   }
 
   @media (min-width: 1200px) {
@@ -126,7 +123,6 @@
   max-width: 500px;
   margin-right: auto;
   display: inline-block;
-
 }
 
 .circle-list__foto1 {
@@ -140,7 +136,6 @@
   border: 1px solid #f3848c;
   padding-top: 70px;
   margin-right: 20px;
- 
 
   @media (min-width: 768px) {
     background-image: url(../images/tablet/image1@2.png);
@@ -149,7 +144,7 @@
     height: 152px;
     padding-top: 60px;
     margin-right: 33px;
-      margin-top: 0px;
+    margin-top: 0px;
   }
 
   @media (min-width: 1200px) {
@@ -157,7 +152,7 @@
     background-size: 288px 288px;
     width: 288px;
     height: 288px;
-  margin-right: 138px;
+    margin-right: 138px;
     padding-top: 160px;
     background-position: -1px -1px;
   }
@@ -193,7 +188,6 @@
     margin-top: 60px;
     padding-top: 160px;
     background-position: -1px -1px;
-
   }
 }
 
@@ -231,7 +225,7 @@
   }
 }
 
-.circle-list__foto4{
+.circle-list__foto4 {
   background-image: url(../images/mobile/image4@2.png);
   background-repeat: no-repeat;
   background-size: 175px 175px;
@@ -307,15 +301,15 @@
   }
 }
 
-.circle-list__description-time{padding-left: 45px;
-@media (min-width: 768px) {
+.circle-list__description-time {
+  padding-left: 45px;
+  @media (min-width: 768px) {
     padding-left: 55px;
   }
   @media (min-width: 1200px) {
     padding-left: 120px;
-  }}
-
-
+  }
+}
 
 .program__text-pictyre {
   display: block;
@@ -337,7 +331,7 @@
   padding-left: 20px;
 }
 
-.donat-list__type{
+.donat-list__type {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -356,10 +350,9 @@
   height: 25px;
   display: inline-block;
   background-size: 100%;
-  background-image: url('../images/hat.svg');
+  background-image: url('../images/donat-gif.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-bottom: -10px;
 }
-
