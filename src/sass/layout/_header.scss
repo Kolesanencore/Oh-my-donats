@@ -2,14 +2,7 @@
 //     Header section
 // ****************************
 
-a {
-  color: currentColor;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.page-header{
-
+.page-header {
   background-image: url(../images/mobile/glazed-donuts-in-boxes.png);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -19,8 +12,7 @@ a {
     background-image: url('../images/mobile/glazed-donuts-in-boxes@2.png');
   }
 
-  @media screen and (min-width:768px) {
-
+  @media screen and (min-width: 768px) {
     background-image: url('../images/tablet/glazed-donuts-in-boxes.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -28,11 +20,9 @@ a {
       (min-resolution: 2dppx) {
       background-image: url('../images/tablet/glazed-donuts-in-boxes@2.png');
     }
-
   }
 
-  @media screen and (min-width:1200px) {
-
+  @media screen and (min-width: 1200px) {
     background-image: url('../images/desktop/glazed-donuts-in-boxes.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -102,7 +92,7 @@ nav {
     }
   }
 
-  @media screen and  (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -111,13 +101,13 @@ nav {
   position: relative;
   z-index: 3;
   width: 108px;
-  @media screen and  (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 108px;
   }
-  @media screen and  (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 106px;
   }
-  @media screen and  (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 158px;
   }
 }
@@ -139,11 +129,11 @@ nav {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  @media screen and  (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     top: 32px;
     right: 32px;
   }
-  @media screen and  (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
   &:hover {
@@ -165,10 +155,8 @@ nav {
 
 // *********************************
 
-
 .mobile-menu-container {
   @media screen and (max-width: 1199px) {
-
     &.is-open {
       display: flex;
       align-items: center;
@@ -197,16 +185,16 @@ nav {
     transform: translateY(-150%);
     transition: transform 250ms;
   }
-  @media screen and  (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 130px;
 
     background-image: url('../images/tablet/bg-menu.png');
     background-repeat: no-repeat;
     background-position: top;
-    background-size:cover ;
+    background-size: cover;
   }
 
-  @media screen and  (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -230,7 +218,7 @@ nav {
       margin-bottom: 20px;
     }
 
-    @media screen and  (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       font-size: 40px;
       line-height: 1.23;
 
@@ -258,7 +246,7 @@ nav {
 // .donat-gif{
 //   position: absolute;
 //   width: 50px;
-//   z-index: 3; 
+//   z-index: 3;
 //   top: 14px;
 //   left: 35px;
 
@@ -273,7 +261,6 @@ nav {
 //   left: 38px;
 //   }
 //   // transform: translateY(-100%);
- 
 
 //   &:hover {
 //     // transform: translateY(0%);
