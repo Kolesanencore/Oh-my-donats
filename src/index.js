@@ -35,8 +35,8 @@ $('.slider').slick({
   infinite: true,
   arrows: true,
   centerPadding: '20px',
-  // autoplay: true,
-  // autoplaySpeed: 5000,
+  autoplay: true,
+  autoplaySpeed: 1800,
   centerMode: true,
   responsive: [
     {
