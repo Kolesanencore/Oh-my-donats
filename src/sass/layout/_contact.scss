@@ -110,6 +110,26 @@
             color: rgba(0, 0, 0, 0.5);
         }
     }
+
+    &:invalid {
+        border-bottom: 1px solid transparent;
+        background-color: #F3848C;
+    }
+    
+    &:not(:focus):invalid {
+        border-bottom: 1px solid #000000;
+        background-color: transparent;
+    
+        @media screen and (min-width: 768px) {
+            border-bottom: 1px solid #000000;
+            background-color: transparent;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            border-bottom: 1px solid #3C322D;
+            background-color: transparent;
+        }
+    }
 }
 
 .contact-form__button {
