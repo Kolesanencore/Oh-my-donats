@@ -1,4 +1,30 @@
-<header class="page-header">
+<button onclick="topFunction()" id="myBtn">&cuwed;</button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById('myBtn').style.display = 'block';
+    } else {
+      document.getElementById('myBtn').style.display = 'none';
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<header class="page-header" id="header">
   <div class="container header-container">
     <!-- <svg class="bagel-hero">
       <use href="./images/icons.svg#bagel-hero"></use>
@@ -7,10 +33,13 @@
     <nav class="nav">
       <!-- logo -->
       <a href="./index.html" class="site-logo">
-        <img class="logo-style" src="./images/logo.png" alt="logo" />
+        <img class="site-logo__logo" src="./images/logo.png" alt="logo" />
+        <img
+          class="site-logo__gif"
+          src="./images/donat-gif.gif "
+          alt="my-donat"
+        />
       </a>
-
-      <!-- <img class="donat-gif" src="/src/images/donat-gif.gif " alt="my-donat"> -->
 
       <!-- Desktop navigation -->
       <ul class="nav-desktop">

@@ -1,19 +1,4 @@
 <section class="section registration-section" id="registration">
-  <svg class="registration-mobile-circle" width="70px" height="70px">
-    <use href="./images/sprite.svg#icon-mobile-reg"></use>
-  </svg>
-  <svg class="registration-tablet-small-circle" width="40px" height="40px">
-    <use href="./images/sprite.svg#icon-tablet-reg-1"></use>
-  </svg>
-  <svg class="registration-tablet-big-circle" width="80px" height="80px">
-    <use href="./images/sprite.svg#icon-tablet-reg-2"></use>
-  </svg>
-  <svg class="registration-desktop-big-circle" width="100px" height="100px">
-    <use href="./images/sprite.svg#icon-desktop-reg-1"></use>
-  </svg>
-  <svg class="registration-desktop-small-circle" width="100px" height="100px">
-    <use href="./images/sprite.svg#icon-desktop-reg-2"></use>
-  </svg>
   <div class="container">
     <h2 class="title registration-section__title">Registration</h2>
     <div class="registration-section__overlay">
@@ -25,37 +10,49 @@
         <h3 class="registration-form__title">
           Apply your personal info for registration
         </h3>
-        <label class="registration-form__item">
+        <div class="registration-form__item">
           <input
-            class="registration-form__name error"
+            class="registration-form__name"
             type="text"
-            name="user-name"
-            placeholder="Your name"
-            required
-            minlength="2"
+            id="user_name"
+            name="user_name"
             pattern="^[a-zA-Z]+$"
-          />
-        </label>
-        <label class="registration-form__item">
-          <input
-            class="registration-form__tel error"
-            type="tel"
-            name="user-tel"
-            placeholder="Phone number"
             required
+            placeholder=" "
+          />
+          <label class="registration-form__label" for="user_name"
+            >Your name</label
+          >
+        </div>
+
+        <div class="registration-form__item">
+          <input
+            class="registration-form__tel"
+            type="tel"
+            id="user-tel"
+            name="user-tel"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
-          />
-        </label>
-        <label class="registration-form__item">
-          <input
-            class="registration-form__email error"
-            type="email"
-            name="user-email"
-            placeholder="Email"
             required
+            placeholder=" "
           />
-        </label>
+          <label class="registration-form__label" for="user-tel"
+            >Phone number</label
+          >
+        </div>
+
+        <div class="registration-form__item">
+          <input
+            class="registration-form__email"
+            type="email"
+            id="user-email"
+            name="user-email"
+            required
+            placeholder=" "
+          />
+          <label class="registration-form__label" for="user-email">Email</label>
+        </div>
+
         <button class="button registration-form__button" type="submit">
           Register
         </button>
