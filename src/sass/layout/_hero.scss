@@ -6,66 +6,50 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  @media screen and (min-width: 480px) {
-  }
+  
   @media screen and (min-width: 768px) {
     align-items: flex-start;
     text-align: left;
   }
-  @media screen and (min-width: 1200px) {
-  }
-}
-
-.hero-title {
-  margin-top: 20px;
-  max-width: 280px;
-  color: #3c322d;
-
-  font-family: 'Montserrat Alternates';
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.21;
-
-  font-size: 7vw;
-
-  @media screen and (min-width: 340px) {
+ 
+  &__title {
     margin-top: 20px;
     max-width: 280px;
-    letter-spacing: -0.03em;
-
-    font-size: 28px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-top: 28px;
-    max-width: 319px;
-
+  
     font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 1.23;
+    line-height: 1.21;
+  
+    font-size: 7vw;
+  
+    @media screen and (min-width: 340px) {
+      margin-top: 20px;
+      max-width: 280px;
+      letter-spacing: -0.03em;
+  
+      font-size: 28px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      margin-top: 28px;
+      max-width: 319px;
+
+      font-size: 30px;
+      line-height: 1.23;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-top: 65px;
+      max-width: 757px;
+  
+      font-size: 60px;
+      line-height: 1.08;
+    }
   }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 65px;
-    max-width: 757px;
-
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 1.08;
-  }
-}
-
-.hero-subtitle {
+  &__subtitle {
   margin-top: 18px;
   margin-bottom: 28px;
 
   font-family: 'Montserrat Alternates';
-  font-style: normal;
-  font-weight: 500;
   line-height: 1.25;
 
   font-size: 5vw;
@@ -83,15 +67,12 @@
     margin-top: 20px;
     margin-bottom: 28px;
 
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 500;
     font-size: 24px;
     line-height: 1.2;
   }
 }
 
-.register-button {
+&__register-button {
   text-align: center;
 
   color: #ffffff;
@@ -123,13 +104,6 @@
     box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
   }
 }
-.register-link {
-  color: inherit;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
 }
 
 .social-links {

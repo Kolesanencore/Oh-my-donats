@@ -15,9 +15,7 @@ a {
   right: 30px;
   z-index: 99;
 
-  font-family: Montserrat Alternates;
   font-size: 35px;
-  font-style: normal;
   font-weight: 600;
 
   border: none;
@@ -150,7 +148,6 @@ nav {
   }
 
   &__gif {
-    // .site-logo div{
     position: absolute;
     visibility: hidden;
     width: 50px;
@@ -166,7 +163,7 @@ nav {
     @media screen and (min-width: 1200px) {
       width: 75px;
       top: 32px;
-      left: 38px;
+      left: 37px;
     }
     transform: translateY(-100%);
   }
@@ -183,7 +180,6 @@ nav {
 // Mobile menu
 
 // mobile menu button
-
 .menu-button {
   position: absolute;
   z-index: 3;
@@ -276,8 +272,7 @@ nav {
     padding: 10px 28px 10px 28px;
 
     font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 500;
+ 
     font-size: 28px;
     line-height: 1.25;
 
