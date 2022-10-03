@@ -37,6 +37,10 @@ $('.slider').slick({
   centerPadding: '20px',
   autoplay: true,
   centerMode: true,
+  useTransform: true,
+  cssEase: 'linear',
+  autoplaySpeed: 1000,
+  // lazyLoad: 'ondemand',
   responsive: [
     {
       breakpoint: 1200,
