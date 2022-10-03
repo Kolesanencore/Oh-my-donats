@@ -1,5 +1,4 @@
 .registration-section {
-    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -162,16 +161,17 @@
 }
 
 .registration-form {
-   @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-       align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+        align-items: center;
 
         &::before {
             display: block;
             content: '';
             outline: 1px solid #FFFFFF;
-            
+            margin-bottom: 20px;
             max-width: 264px;
             width: 100%;
         }
@@ -184,8 +184,8 @@
             position: absolute;
             outline: 1px solid rgba(0, 0, 0, 0.5);
             rotate: 90deg;
-            left: 106px;
-            top: 135px;
+            left: 105px;
+            top: 140px;
         }
     }
 
@@ -205,12 +205,10 @@
 .registration-form__title {
     @media screen and (max-width: 767px) {
         margin-bottom: 20px;
-        padding-top: 20px;
         text-align: center;
-
-        color: #FFFFFF;
     }
 
+    color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -218,16 +216,13 @@
     @media screen and (min-width: 768px) {
         width: 200px;
         margin-bottom: 16px;
-
         color: #000000;
     }
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 24px;
         width: 267px;
-
         color: #3C322D;
-
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -238,10 +233,6 @@
     width: 264px;
     width: 100%;
     margin-bottom: 20px;
-    position: relative;
-    background-color: transparent;
-    border: 0;
-    cursor: auto;
 
     @media screen and (min-width: 768px) {
         width: 237px;
@@ -254,28 +245,6 @@
         margin-bottom: 14px;
     }
 }
-       
-.registration-form__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: auto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        color: #FFFFFF;
-    }
-
-    @media screen and (min-width: 768px) {
-        color: rgba(0, 0, 0, 0.5);
-    }
-    @media screen and (min-width: 1200px) {
-        color: #2E2520;
-    }
-}
 
 .registration-form__name,
 .registration-form__tel,
@@ -283,53 +252,61 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-
-    width: 100%;
-    height: 22px;
-    border: 0;
-    background: transparent;
-
-    &:focus {
-        outline: 0;
-
-        &+label {
-            opacity: 0;
-        }
-    }
-
-    &:valid {
-        &+label {
-            opacity: 0;
-        }
-    }
-
-    &:invalid:not(:focus):not(:placeholder-shown) {
-        border-color: #ff0000;
-        color: #ff0000;
-
-        &+label {
-            opacity: 0;
-        }
-    }
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: 0;
 
     @media screen and (max-width: 767px) {
         width: 100%;
         color: #FFFFFF;
         border-bottom: 1px solid #FFFFFF;
+
+        &::placeholder {
+            color: #FFFFFF;
+        }
     }
 
     @media screen and (min-width: 768px) {
         width: 234px;
         color: rgba(0, 0, 0, 0.5);
         border-bottom: 1px solid #000000;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
     }
-    
+
     @media screen and (min-width: 1200px) {
         width: 212px;
         color: #2E2520;
         border-bottom: 1px solid #2E2520;
-   }
 
+        &::placeholder {
+            color: #2E2520;
+        }
+    }
+
+    &:invalid {
+        border-bottom: 2px solid red;
+    }
+
+    &:valid {
+        border-bottom: 2px solid green;
+    }
+
+    &:not(:focus):invalid {
+        border-bottom: 1px solid #FFFFFF;
+
+        @media screen and (min-width: 768px) {
+            border-bottom: 1px solid #000000;
+        }
+
+        @media screen and (min-width: 1200px) {
+            border-bottom: 1px solid #2E2520;
+        }
+    }
 }
 
 .registration-form__button {
@@ -363,12 +340,12 @@
 
     @media screen and (min-width: 768px) {
         position: absolute;
-        top: 105px;
-        left: 515px;
+        top: 102px;
+        left: 518px;
     }
 
     @media screen and (min-width: 1200px) {
-        left: 651px;
-        top: 100px;
+        top: 103px;
+        left: 655px;
     }
 }
