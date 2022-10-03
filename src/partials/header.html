@@ -1,13 +1,46 @@
-<header class="page-header">
-  <div class="container header-container overlay">
-    <svg class="bagel-hero">
+<button onclick="topFunction()" id="myBtn">&cuwed;</button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById('myBtn').style.display = 'block';
+    } else {
+      document.getElementById('myBtn').style.display = 'none';
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<header class="page-header" id="header">
+  <div class="container header-container">
+    <!-- <svg class="bagel-hero">
       <use href="./images/icons.svg#bagel-hero"></use>
-    </svg>
+    </svg> -->
+
     <nav class="nav">
       <!-- logo -->
       <a href="./index.html" class="site-logo">
-        <img class="logo-style" src="./images/logo.png" alt="logo" />
+        <img class="site-logo__logo" src="./images/logo.png" alt="logo" />
+        <img
+          class="site-logo__gif"
+          src="./images/donat-gif.gif "
+          alt="my-donat"
+        />
       </a>
+
       <!-- Desktop navigation -->
       <ul class="nav-desktop">
         <li class="nav-desktop__item">
@@ -37,36 +70,16 @@
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
           <use
             class="icon-menu"
-            href="./images/icons.svg#icon-mmenu-open"
+            href="./images/sprite.svg#icon-mmenu-open"
           ></use>
           <use
             class="icon-cross"
-            href="./images/icons.svg#icon-mmenu-close"
+            href="./images/sprite.svg#icon-mmenu-close"
           ></use>
         </svg>
       </button>
       <!-- mobile menu window -->
       <div class="mobile-menu-container" data-menu>
-        <svg class="bagel-menu1">
-          <use href="./images/icons.svg#bagel-menu"></use>
-        </svg>
-        <svg class="bagel-menu2">
-          <use href="./images/icons.svg#bagel-menu"></use>
-        </svg>
-        <svg class="bagel-menu3">
-          <use href="./images/icons.svg#bagel-menu"></use>
-        </svg>
-
-        <svg class="bagel-menu4">
-          <use href="./images/icons.svg#bagel-menu"></use>
-        </svg>
-        <svg class="bagel-menu5">
-          <use href="./images/icons.svg#bagel-menu"></use>
-        </svg>
-        <svg class="bagel-menu6">
-          <use href="./images/icons.svg#bagel-menu"></use>
-        </svg>
-
         <nav class="nav-mobile">
           <ul class="nav-mobile__list" data-menu-close>
             <li class="nav-mobile__item">
@@ -93,17 +106,17 @@
       <!-- end mobile menu -->
     </nav>
     <div class="hero">
-      <h1 class="hero-title">Donut Masterclass with the Donut King</h1>
-      <h2 class="hero-subtitle">Hosted by Eva Green</h2>
-      <div class="register-button">
-        <a class="register-link" href="#registration">Register</a>
+      <h1 class="hero__title">Donut Masterclass with the Donut King</h1>
+      <h2 class="hero__subtitle">Hosted by Eva Green</h2>
+      <div class="hero__register-button">
+        <a href="#registration">Register</a>
       </div>
 
       <ul class="social-links">
         <li class="social-links__item">
           <a href="#" class="social-links__link">
             <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-twitter"></use>
+              <use href="./images/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -111,7 +124,7 @@
         <li class="social-links__item">
           <a href="#" class="social-links__link">
             <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-insta"></use>
+              <use href="./images/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
@@ -119,7 +132,7 @@
         <li class="social-links__item">
           <a href="#" class="social-links__link">
             <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-facebook"></use>
+              <use href="./images/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>

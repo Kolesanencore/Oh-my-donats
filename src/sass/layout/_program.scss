@@ -1,16 +1,16 @@
-.program__container {
+.program {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #3c322d;
   max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-
   @media (min-width: 768px) {
     max-width: 768px;
+    display: flex;
   }
   @media (min-width: 1200px) {
-    max-width: 1200px;
   }
 }
 
@@ -21,54 +21,45 @@
   font-size: 24px;
   line-height: 1.2;
   padding-top: 10px;
-
   text-align: center;
   color: #3c322d;
   padding-bottom: 8px;
-
   @media (min-width: 768px) {
     margin-left: auto;
     text-align: start;
   }
-
   @media (min-width: 1200px) {
-    margin-top: 162px;
+    padding-top: 62px;
     font-family: 'Montserrat Alternates';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 1.21;
-        color: #3C322D;
-        padding-bottom: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.21;
+    color: #3c322d;
+    padding-bottom: 24px;
   }
 }
 
-.program {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #3c322d;
-  max-width: 480px;
-
-  @media (min-width: 768px) {
-    max-width: 768px;
-    display: flex;
-  }
-}
-
-.program__tablet-text {
+.program__wrapper {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: 768px) {
+    padding-top: 46px;
+    max-width: 331px;
+    margin-left: 16px;
+    margin-right: 40;
+  }
   @media (min-width: 1200px) {
     display: block;
-    min-width: 500px;
+    min-width: 400px;
+    margin-right: 70px;
+    padding-top: 100px;
+    margin-right: 20px;
   }
 }
 
-.program__text-li {
+.donat-list__item {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -77,9 +68,8 @@
   color: #3c322d;
   margin-bottom: 10px;
   display: flex;
-
   align-items: center;
-
+  margin-top: 21px;
   @media (min-width: 768px) {
     margin-bottom: 16px;
   }
@@ -98,37 +88,44 @@
   }
 }
 
-.hidden-text {
+.program__hidden-text {
   @media (max-width: 1199px) {
     display: none;
   }
 }
 
-.program__fotos {
+.circle-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 34px;
 
   @media (min-width: 768px) {
     max-width: 350px;
+    padding-top: 65px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
   }
 
   @media (min-width: 1200px) {
     min-width: 730px;
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-right: 15px;
   }
 }
 
 .program p {
   max-width: 500px;
-
   margin-right: auto;
   display: inline-block;
 }
 
-.program__foto1 {
+.circle-list__foto1 {
   background-image: url(../images/mobile/image1@2.png);
   background-repeat: no-repeat;
   background-size: 175px 175px;
@@ -138,8 +135,7 @@
   border-radius: 50%;
   border: 1px solid #f3848c;
   padding-top: 70px;
-  margin-right: 23px;
-  margin-top: 24px;
+  margin-right: 20px;
 
   @media (min-width: 768px) {
     background-image: url(../images/tablet/image1@2.png);
@@ -147,7 +143,8 @@
     width: 152px;
     height: 152px;
     padding-top: 60px;
-    margin-top: 15px;
+    margin-right: 33px;
+    margin-top: 0px;
   }
 
   @media (min-width: 1200px) {
@@ -155,13 +152,13 @@
     background-size: 288px 288px;
     width: 288px;
     height: 288px;
-    margin-top: 100px;
+    margin-right: 138px;
     padding-top: 160px;
     background-position: -1px -1px;
   }
 }
 
-.program__foto2 {
+.circle-list__foto2 {
   background-image: url(../images/mobile/image2@2.png);
   background-repeat: no-repeat;
   background-size: 175px 175px;
@@ -171,7 +168,7 @@
   border-radius: 50%;
   border: 1px solid #f3848c;
   padding-top: 70px;
-  margin-top: 44px;
+  margin-top: 12px;
 
   @media (min-width: 768px) {
     margin-top: 22px;
@@ -180,6 +177,7 @@
     width: 152px;
     height: 152px;
     padding-top: 60px;
+    margin-top: 0px;
   }
 
   @media (min-width: 1200px) {
@@ -187,13 +185,13 @@
     background-size: 288px 288px;
     width: 288px;
     height: 288px;
-    margin-top: 160px;
+    margin-top: 60px;
     padding-top: 160px;
     background-position: -1px -1px;
   }
 }
 
-.program__foto3 {
+.circle-list__foto3 {
   background-image: url(../images/mobile/image3@2.png);
   background-repeat: no-repeat;
   background-size: 175px 175px;
@@ -204,6 +202,7 @@
   border: 1px solid #f3848c;
   padding-top: 70px;
   margin-right: 23px;
+  margin-top: 18px;
 
   @media (min-width: 768px) {
     margin-top: 40px;
@@ -220,13 +219,13 @@
     background-size: 288px 288px;
     width: 288px;
     height: 288px;
-    margin-top: 36px;
     padding-top: 160px;
     background-position: -1px -1px;
+    margin-right: 138px;
   }
 }
 
-.program__foto4 {
+.circle-list__foto4 {
   background-image: url(../images/mobile/image4@2.png);
   background-repeat: no-repeat;
   background-size: 175px 175px;
@@ -244,6 +243,7 @@
     width: 152px;
     height: 152px;
     padding-top: 60px;
+    margin-top: 38px;
   }
 
   @media (min-width: 1200px) {
@@ -257,7 +257,7 @@
   }
 }
 
-.program__sub-title {
+.circle-list__inscription {
   font-family: 'Montserrat Alternates';
   font-weight: 500;
   font-size: 12px;
@@ -268,8 +268,8 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 1.25;
-    padding-left: 5px;
-    padding-top: 30px;
+    padding-left: 3px;
+    padding-top: 25px;
   }
 
   @media (min-width: 1200px) {
@@ -278,7 +278,7 @@
   }
 }
 
-.program__description {
+.circle-list__description {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 12px;
@@ -301,13 +301,14 @@
   }
 }
 
-.program__border-foto {
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  position: relative;
-  display: block;
-  z-index: 0;
+.circle-list__description-time {
+  padding-left: 45px;
+  @media (min-width: 768px) {
+    padding-left: 55px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 120px;
+  }
 }
 
 .program__text-pictyre {
@@ -324,13 +325,13 @@
   display: flex;
 }
 
-.list {
+.program__list {
   margin-top: 10px;
   margin-bottom: 16px;
   padding-left: 20px;
 }
 
-.program__text-p {
+.donat-list__type {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -342,129 +343,16 @@
   }
 }
 
-.program__text-li::before {
+.donat-list__item::before {
   content: '';
   position: absolute;
   width: 25px;
   height: 25px;
   display: inline-block;
   background-size: 100%;
-  background-image: url('../images/hat.svg');
+  background-image: url('../images/donat-gif.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-bottom: -10px;
-}
-
-.donat1 {
-  position: absolute;
-
-  z-index: 10;
-  top: 150px;
-  left: 400px;
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-.donat2 {
-  position: absolute;
-  z-index: 10;
-  top: 250px;
-  left: 60px;
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-.donat3 {
-  position: absolute;
-  z-index: 10;
-  top: 350px;
-  left: 360px;
-  @media (min-width: 768px) {
-    top: 180px;
-        left: 370px;
-  }
-  @media (min-width: 1200px) {
-      display: none;
-  }
-}
-.donat4 {
-  position: absolute;
-  z-index: 10;
-  top: 450px;
-  left: 380px;
-  @media (min-width: 768px) {
-    top: 20px;
-        left: 550px;
-  }
-}
-.donat5 {
-  position: absolute;
-  z-index: -200;
-  top: 10px;
-  left: 250px;
-
-  @media (min-width: 768px) {
-    left: 30px;
-    top: 3px;
-  }
-  @media (min-width: 1200px){
-    display: none;
-    
-  }
-}
-.donat6 {
-    position: absolute;
-    z-index: -2;
-    top: 600px;
-    left: 250px;
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
-.donat7 {
-    @media (max-width: 767px) {
-      display: none;
-        }
-    @media (min-width: 768px) {
-        position: absolute;
-            z-index: -2;
-            top: 200px;
-            left: 550px;
-    }
-}
-.donat8 {
-    @media (max-width: 767px) {
-        display: none;
-    }
-
-    @media (min-width: 768px) {
-        position: absolute;
-        z-index: -2;
-        top: 430px;
-        left: 520px;
-    }
-}
-.donat9 {
-    @media (max-width: 1199px) {
-        display: none;
-    }
-    @media (min-width: 1200px) {
-        position: absolute;
-        z-index: -2;
-        top: 120px;
-        left: 50px;
-    }
-}
-.donat10 {
-    @media (max-width: 1199px) {
-        display: none;
-    }
-    @media (min-width: 1200px) {
-        position: absolute;
-        z-index: -2;
-        top: 420px;
-        left: 820px;
-    }
 }
