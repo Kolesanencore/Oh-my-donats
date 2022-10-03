@@ -8,10 +8,46 @@ a {
   font-style: normal;
 }
 
+.page-header{
+
+  background-image: url(../images/mobile/glazed-donuts-in-boxes.png);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/glazed-donuts-in-boxes@2.png');
+  }
+
+  @media screen and (min-width:768px) {
+
+    background-image: url('../images/tablet/glazed-donuts-in-boxes.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/glazed-donuts-in-boxes@2.png');
+    }
+
+  }
+
+  @media screen and (min-width:1200px) {
+
+    background-image: url('../images/desktop/glazed-donuts-in-boxes.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/glazed-donuts-in-boxes@2.png');
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
 .header-container {
   position: relative;
-
-  background-color: #e5e2e3;
 
   padding-top: 16px;
   padding-bottom: 8px;
@@ -36,83 +72,6 @@ a {
     padding-right: 16px;
     padding-left: 16px;
   }
-}
-
-.overlay {
-  margin: 0 auto;
-
-  max-width: 320px;
-  height: 312px;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0),
-      rgba(47, 48, 58, 0)
-    ),
-    url(../images/mobile/glazed-donuts-in-boxes.jpg);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0)
-      ),
-      url('../images/desktop/glazed-donuts-in-boxes@2.jpg');
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    min-height: 345px;
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0)
-      ),
-      url('../images/tablet/glazed-donuts-in-boxes.jpg');
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0),
-          rgba(47, 48, 58, 0)
-        ),
-        url('../images/tablet/glazed-donuts-in-boxes@2.jpg');
-    }
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1280px;
-    min-height: 556px;
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0)
-      ),
-      url('../images/desktop/glazed-donuts-in-boxes.jpg');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0),
-          rgba(47, 48, 58, 0)
-        ),
-        url('../images/desktop/glazed-donuts-in-boxes@2.jpg');
-    }
-    box-shadow: none;
-  }
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 nav {
@@ -143,7 +102,7 @@ nav {
     }
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and  (max-width: 1199px) {
     display: none;
   }
 }
@@ -152,13 +111,13 @@ nav {
   position: relative;
   z-index: 3;
   width: 108px;
-  @media screen and (min-width: 480px) {
+  @media screen and  (min-width: 480px) {
     width: 108px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and  (min-width: 768px) {
     width: 106px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and  (min-width: 1200px) {
     width: 158px;
   }
 }
@@ -180,11 +139,11 @@ nav {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
+  @media screen and  (min-width: 768px) {
     top: 32px;
     right: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and  (min-width: 1200px) {
     display: none;
   }
   &:hover {
@@ -206,131 +165,49 @@ nav {
 
 // *********************************
 
-// mobile menu container
-.mobile-menu-container.is-open {
-  transform: translateY(0%);
-}
+
 .mobile-menu-container {
   @media screen and (max-width: 1199px) {
-    display: none;
 
     &.is-open {
       display: flex;
       align-items: center;
+
+      transform: translateY(0%);
     }
 
-    position: absolute;
+    position: fixed;
     z-index: 2;
     flex-direction: column;
     justify-content: space-between;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     padding-top: 102px;
 
     background-color: #e5e2e3;
 
-    transform: translateY(-110vh);
+    background-image: url('../images/mobile/bg-menu.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    transform: translateY(-150%);
     transition: transform 250ms;
-    // transition-delay: 500ms;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and  (min-width: 768px) {
     padding-top: 130px;
+
+    background-image: url('../images/tablet/bg-menu.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:cover ;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and  (min-width: 1200px) {
     display: none;
-  }
-}
-
-.bagel-menu1 {
-  position: absolute;
-  fill: #d68362;
-  width: 78px;
-  height: 78px;
-
-  top: 66px;
-  left: 270px;
-  @media screen and (min-width: 768px) {
-    width: 100px;
-    height: 100px;
-
-    top: 51px;
-    left: 222px;
-  }
-}
-.bagel-menu2 {
-  position: absolute;
-  fill: #3c322d;
-  width: 16px;
-  height: 16px;
-
-  top: 382px;
-  right: 19px;
-  @media screen and (min-width: 768px) {
-    width: 20px;
-    height: 20px;
-
-    top: 456px;
-    right: 506px;
-  }
-}
-
-.bagel-menu3 {
-  position: absolute;
-  fill: #3c322d;
-  width: 100px;
-  height: 100px;
-
-  top: 487px;
-  right: 236px;
-  @media screen and (min-width: 768px) {
-    top: 463px;
-    right: 32px;
-  }
-}
-
-.bagel-menu4 {
-  position: absolute;
-  fill: transparent;
-  z-index: -1;
-  @media screen and (min-width: 768px) {
-    fill: #d68362;
-    width: 100px;
-    height: 100px;
-
-    top: 684px;
-    left: 23px;
-  }
-}
-.bagel-menu5 {
-  position: absolute;
-  fill: transparent;
-  z-index: -1;
-
-  @media screen and (min-width: 768px) {
-    fill: #3c322d;
-    width: 20px;
-    height: 20px;
-
-    top: 744px;
-    right: 320px;
-  }
-}
-
-.bagel-menu6 {
-  position: absolute;
-  fill: transparent;
-  z-index: -1;
-
-  @media screen and (min-width: 768px) {
-    fill: #3c322d;
-    width: 100px;
-    height: 100px;
-    top: 863px;
-    right: 74px;
   }
 }
 
@@ -353,7 +230,7 @@ nav {
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and  (min-width: 768px) {
       font-size: 40px;
       line-height: 1.23;
 
@@ -377,6 +254,34 @@ nav {
     }
   }
 }
+
+// .donat-gif{
+//   position: absolute;
+//   width: 50px;
+//   z-index: 3; 
+//   top: 14px;
+//   left: 35px;
+
+//   @media screen and (min-width: 768px) {
+//     width: 50px;
+//     top: 22px;
+//     left: 46px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 75px;
+//   top: 32px;
+//   left: 38px;
+//   }
+//   // transform: translateY(-100%);
+ 
+
+//   &:hover {
+//     // transform: translateY(0%);
+//     // transform: z-index(10);
+//     // transition: transform 250ms;
+//     // z-index: 10;
+//   }
+//}
 
 // ***************************
 //     END Header section
