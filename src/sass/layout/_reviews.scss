@@ -1,9 +1,4 @@
 .reviews {
-  background-image: url('../images/desktop/reviews/bgd.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
   position: relative;
 
   &__title {
@@ -58,6 +53,7 @@
 
     &.slider__item {
       height: 712px;
+      justify-content: center;
     }
   }
 }
