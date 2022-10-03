@@ -1,15 +1,15 @@
 .price {
   @media screen and (max-width: 767px) {
-    padding-top: 39px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 77px;
+    padding-top: 32px;
     padding-bottom: 80px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 101px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
 }
@@ -210,8 +210,8 @@
   padding-top: 8;
   padding-bottom: 9;
   width: 145px;
-  background-color: #f3848c;
-  border: 1px solid #f3848c;
+  background-color: $primary-pink-color;
+  border: 1px solid $primary-pink-color;
 
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -221,11 +221,11 @@
   box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
 
   &:hover {
-    color: #f3848c;
+    color: $primary-pink-color;
     background-color: #ffffff;
   }
   &:active {
-    background-color: #f3848c;
+    background-color: $primary-pink-color;
     border: 1px solid #ffffff;
     color: #ffffff;
     box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
