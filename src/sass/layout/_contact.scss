@@ -112,22 +112,17 @@
     }
 
     &:invalid {
-        border-bottom: 1px solid transparent;
-        background-color: #F3848C;
+        border: 2px solid #F3848C;
     }
     
     &:not(:focus):invalid {
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
         border-bottom: 1px solid #000000;
-        background-color: transparent;
-    
-        @media screen and (min-width: 768px) {
-            border-bottom: 1px solid #000000;
-            background-color: transparent;
-        }
     
         @media screen and (min-width: 1200px) {
             border-bottom: 1px solid #3C322D;
-            background-color: transparent;
         }
     }
 }
