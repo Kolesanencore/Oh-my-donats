@@ -22,10 +22,11 @@ padding-top: 20px;
     width: 1200px;
   }
 }
-.about-us__picture {
+.about-us__picture {border-radius: 24px;
   @media (min-width: 768px) {
     width: 336px;
     height: 336px;
+    
    
   }
   @media (min-width: 1200px) {
@@ -59,7 +60,7 @@ padding-top: 20px;
     margin-top: 0px;
   }
 }
-.about-us__text1 {
+.about-us__first-part {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +72,7 @@ padding-top: 20px;
     line-height: 1.22;
   }
 }
-.about-us__text2 {
+.about-us__second-part {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
@@ -113,28 +114,4 @@ padding-top: 20px;
     display: block;
   }
 }
-.about-us__donat1 {
-  @media (min-width: 320px) {
-    position: absolute;
-    top: 330px;
-    left: 130px;
-  }
-  @media (min-width: 768px) {
-    position: absolute;
-    top: 60px;
-    left: 380px;
-  }
-  @media (min-width: 1200px) {
-    display: none;
-  }
-}
-.about-us__donat2 {
-  @media (max-width: 1199px) {
-    display: none;
-  }
-  @media (min-width: 1200px) {
-    position: absolute;
-    top: 70px;
-    right: 260px;
-  }
-}
+
