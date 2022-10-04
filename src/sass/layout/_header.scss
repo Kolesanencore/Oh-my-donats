@@ -231,11 +231,13 @@ nav {
       
     }
 
+    display: flex;
     position: fixed;
     z-index: 2;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     top: 0;
     left: 0;
     width: 100vw;
@@ -252,7 +254,7 @@ nav {
     background-position: top;
     background-size: cover;
 
-    transform: translateY(-150%);
+    transform: translateY(-100%);
     transition: transform 250ms;
     
   }
@@ -263,6 +265,11 @@ nav {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+
+    overflow-y: auto;
+
+    transform: translateY(-200%);
+    transition: transform 250ms;
   }
 
   @media screen and (min-width: 1200px) {
