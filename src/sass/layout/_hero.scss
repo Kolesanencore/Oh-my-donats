@@ -139,28 +139,28 @@
   }
 }
 
-// .bagel-hero {
-//   position: absolute;
+.bagel-hero {
+  position: absolute;
 
-//   fill: #f3848c;
+  fill: #f3848c;
 
-//   width: 50px;
-//   height: 50px;
-//   top: 104px;
-//   left: 38px;
-//   @media screen and (min-width: 768px) {
-//     width: 100px;
-//     height: 100px;
-//     top: 92px;
-//     left: 268px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     width: 150px;
-//     height: 150px;
-//     top: 171px;
-//     left: 449px;
-//   }
-// }
+  width: 50px;
+  height: 50px;
+  top: 104px;
+  left: 38px;
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+    top: 92px;
+    left: 268px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 150px;
+    height: 150px;
+    top: 171px;
+    left: 449px;
+  }
+}
 
 // ***************************
 //     END Hero section
