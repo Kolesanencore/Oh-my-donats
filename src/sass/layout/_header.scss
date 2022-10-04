@@ -2,11 +2,11 @@
 //     Header section
 // ****************************
 
-a {
-  color: currentColor;
-  text-decoration: none;
-  font-style: normal;
-}
+// a {
+//   color: currentColor;
+//   text-decoration: none;
+//   font-style: normal;
+// }
 
 #myBtn {
   display: none;
@@ -166,6 +166,7 @@ nav {
       left: 37px;
     }
     transform: translateY(-100%);
+    
   }
 
   &:hover &__gif {
@@ -199,8 +200,9 @@ nav {
   @media screen and (min-width: 1200px) {
     display: none;
   }
+
   &:hover {
-    fill: #000000;
+    fill: #2E2520;
   }
 }
 
@@ -219,22 +221,27 @@ nav {
 // *********************************
 
 .mobile-menu-container {
+  
   @media screen and (max-width: 1199px) {
     &.is-open {
       display: flex;
       align-items: center;
 
       transform: translateY(0%);
+      
     }
 
     position: fixed;
     z-index: 2;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+
+    overflow-y: auto;
 
     padding-top: 102px;
 
@@ -247,6 +254,7 @@ nav {
 
     transform: translateY(-150%);
     transition: transform 250ms;
+    
   }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
@@ -258,7 +266,8 @@ nav {
   }
 
   @media screen and (min-width: 1200px) {
-    display: none;
+    // display: none;
+    visibility: hidden;
   }
 }
 
