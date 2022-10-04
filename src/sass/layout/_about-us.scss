@@ -1,10 +1,12 @@
 .about-us__container {
+padding-top: 20px;
   @media (min-width: 768px) {
     display: flex;
+    padding-top: 36px;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 36px;
+    padding-top: 64px;
   }
 }
 
@@ -20,11 +22,12 @@
     width: 1200px;
   }
 }
-.about-us__picture {
+.about-us__picture {border-radius: 24px;
   @media (min-width: 768px) {
     width: 336px;
     height: 336px;
-    padding-top: 36px;
+    
+   
   }
   @media (min-width: 1200px) {
     width: 608px;
@@ -34,7 +37,7 @@
 }
 .about-us__text {
   @media (min-width: 768px) {
-    margin-left: auto;
+    margin-left: 63px;
     width: 337px;
   }
   @media (min-width: 1200px) {
@@ -43,7 +46,7 @@
   }
 }
 .about-us__title {
-  margin-top: 28px;
+
   text-align: center;
   margin-bottom: 8px;
   font-family: 'Montserrat Alternates';
@@ -51,11 +54,13 @@
   font-size: 24px;
   line-height: 1.2;
   color: #3c322d;
+  margin-top: 28px;
   @media (min-width: 768px) {
     text-align: start;
+    margin-top: 0px;
   }
 }
-.about-us__text1 {
+.about-us__first-part {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
@@ -67,7 +72,7 @@
     line-height: 1.22;
   }
 }
-.about-us__text2 {
+.about-us__second-part {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
@@ -109,28 +114,4 @@
     display: block;
   }
 }
-.about-us__donat1 {
-  @media (min-width: 320px) {
-    position: absolute;
-    top: 330px;
-    left: 130px;
-  }
-  @media (min-width: 768px) {
-    position: absolute;
-    top: 60px;
-    left: 380px;
-  }
-  @media (min-width: 1200px) {
-    display: none;
-  }
-}
-.about-us__donat2 {
-  @media (max-width: 1199px) {
-    display: none;
-  }
-  @media (min-width: 1200px) {
-    position: absolute;
-    top: 70px;
-    right: 260px;
-  }
-}
+
