@@ -1,8 +1,9 @@
 .registration-section {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding-top: 40px;
     padding-bottom: 34px;
   }
@@ -71,8 +72,8 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .registration-section__overlay {
+.registration-section__overlay {
+  @media screen and (min-width: 768px) {
     background: url(../images/tablet/registration/tablet-reg.png) left 23px top
         159px,
       url(../images/tablet/registration/tablet-reg-overlay.png),
@@ -80,18 +81,18 @@
       url(../images/tablet/registration/tablet-reg-bg.png) right;
     background-repeat: no-repeat;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: url(../images/tablet/registration/tablet-reg.png) left 23px
-          top 159px,
-        url(../images/tablet/registration/tablet-reg-overlay@2x.png),
-        linear-gradient(to right, rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-        url(../images/tablet/registration/tablet-reg-bg@2x.png) right;
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background: url(../images/tablet/registration/tablet-reg.png) left 23px
+    //       top 159px,
+    //     url(../images/tablet/registration/tablet-reg-overlay@2x.png),
+    //     linear-gradient(to right, rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+    //     url(../images/tablet/registration/tablet-reg-bg@2x.png) right;
+    // }
 
     display: flex;
-    width: 704px;
+    max-width: 704px;
     height: 246px;
     border-radius: 10px;
     padding-top: 40px;
@@ -102,41 +103,30 @@
     margin-right: auto;
     position: relative;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .registration-section__overlay {
-    background:
-    //  url(../images/desktop/registration/desktop-reg.png) left 15px
-    //     top 97px,
-      url(../images/desktop/registration/desktop-reg-overlay.png),
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    max-width: 1034px;
+    padding-left: 213px;
+    padding-right: 232px;
+    background: url(../images/desktop/registration/desktop-reg.png) left 15px
+        top 84px,
+      url(../images/desktop/registration/sky-min.png) left 0px top 0px,
       linear-gradient(to right, rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
       url(../images/desktop/registration/desktop-reg-bg.png) right;
     background-repeat: no-repeat;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: 
-      // url(../images/desktop/registration/desktop-reg.png) left 15px
-      //     top 97px,
-        url(../images/desktop/registration/desktop-reg-overlay@2x.png),
-        linear-gradient(to right, rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-        url(../images/desktop/registration/desktop-reg-bg@2x.png) right;
-    }
-
-    display: flex;
-    width: 1034px;
-    height: 246px;
-    border-radius: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 213px;
-    padding-right: 232px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    // height: 246px;
   }
+}
+
+.registration-section__overlay {
+  // border-radius: 10px;
+  // padding-top: 40px;
+  // padding-bottom: 40px;
+  // padding-left: 213px;
+  // padding-right: 232px;
+
+  box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
 }
 
 .registration-section__date {
@@ -207,10 +197,10 @@
       width: 166px;
       content: '';
       position: absolute;
-      outline: 1px solid #2e2520;
+      outline: 1px solid rgba(0, 0, 0, 0.5);
       rotate: 90deg;
-      left: 285px;
       top: 125px;
+      left: 288px;
     }
   }
 }
@@ -359,6 +349,6 @@
 
   @media screen and (min-width: 1200px) {
     top: 103px;
-    left: 655px;
+    left: 657px;
   }
 }

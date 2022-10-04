@@ -19,6 +19,7 @@
             required
             minlength="2"
             pattern="^[a-zA-Z]+$"
+            title="Use only letters. Minimum 2 characters"
           />
         </label>
         <label class="registration-form__item">
@@ -39,6 +40,8 @@
             name="user-email"
             placeholder="Email"
             required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Use @ Use .com"
           />
         </label>
         <button class="button registration-form__button" type="submit">
