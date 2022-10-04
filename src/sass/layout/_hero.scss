@@ -108,8 +108,9 @@
 
 .social-links {
   display: flex;
-
   margin-top: 28px;
+
+ 
 
   @media screen and (min-width: 480px) {
     margin-top: 28px;
@@ -123,6 +124,10 @@
 
   &__item:not(:last-child) {
     margin-right: 16px;
+  }
+
+  &__link{
+    fill: #2E2520;
   }
   &__link:hover,
   &__link:focus,
