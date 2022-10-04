@@ -36,39 +36,73 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .registration-section__overlay {
+// @media screen and (max-width: 767px) {
+//   .registration-section__overlay {
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(61, 44, 44, 0.6),
+//         rgba(61, 44, 44, 0.6)
+//       ),
+//       url(../images/mobile/registration/donuts-reg.png);
+//     background-size: cover;
+//     background-color: #3d2c2c;
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           to right,
+//           rgba(61, 44, 44, 0.6),
+//           rgba(61, 44, 44, 0.6)
+//         ),
+//         url(../images/mobile/registration/donuts-reg@2x.png);
+//     }
+
+//     width: 100%;
+//     max-width: 280px;
+//     align-items: center;
+//     border-radius: 10px;
+//     box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+//     padding-top: 40px;
+//     padding-bottom: 32px;
+//     padding-left: 8px;
+//     padding-right: 8px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+//******************************************
+.registration-section__overlay {
+  box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+
+
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #f6f7f7;
+  background-image: linear-gradient(90deg, #3d2c2c99, #3d2c2c99),
+    url(../images/mobile/registration/donuts-reg.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 40px 8px 32px;
+  position: relative;
+  box-shadow: 10px 15px 25px #d2c9c973;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(61, 44, 44, 0.6),
         rgba(61, 44, 44, 0.6)
       ),
-      url(../images/mobile/registration/donuts-reg.png);
-    background-size: cover;
-    background-color: #3d2c2c;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(61, 44, 44, 0.6),
-          rgba(61, 44, 44, 0.6)
-        ),
-        url(../images/mobile/registration/donuts-reg@2x.png);
-    }
-
-    width: 100%;
-    max-width: 280px;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
-    padding-top: 40px;
-    padding-bottom: 32px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-left: auto;
-    margin-right: auto;
+      url(../images/mobile/registration/donuts-reg@2x.png);
   }
 }
 
@@ -91,24 +125,34 @@
     //     url(../images/tablet/registration/tablet-reg-bg@2x.png) right;
     // }
 
+
+    position: relative;
+
     display: flex;
     max-width: 704px;
     height: 246px;
     border-radius: 10px;
     padding-top: 40px;
     padding-bottom: 32px;
-    padding-left: 62px;
-    padding-right: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    // padding-left: 62px;
+    // padding-right: 40px;
+
+    // margin-left: auto;
+    // margin-right: auto;
+
+    margin: 0 auto;
     position: relative;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     max-width: 1034px;
-    padding-left: 213px;
-    padding-right: 232px;
+    // padding-left: 213px;
+
+    // padding-right: 232px;
+
+    margin: 0 auto;
+
     background: url(../images/desktop/registration/desktop-reg.png) left 15px
         top 84px,
       url(../images/desktop/registration/sky-min.png) left 0px top 0px,
@@ -119,17 +163,10 @@
   }
 }
 
-.registration-section__overlay {
-  // border-radius: 10px;
-  // padding-top: 40px;
-  // padding-bottom: 40px;
-  // padding-left: 213px;
-  // padding-right: 232px;
-
-  box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
-}
 
 .registration-section__date {
+    display: inline-block;
+
   @media screen and (max-width: 767px) {
     max-width: 114px;
     text-align: center;
@@ -145,10 +182,15 @@
   line-height: 1.2;
 
   @media screen and (min-width: 768px) {
+
+    position: absolute;
+    left: 62px;
+    top: 85px;
+
     width: 90px;
     align-self: center;
     text-align: end;
-    margin-right: 56px;
+    // margin-right: 56px;
 
     color: #000000;
   }
@@ -157,6 +199,10 @@
     width: 127px;
     color: #3c322d;
     align-self: center;
+
+    left: 213px;
+    top: 99px;
+
 
     font-size: 20px;
     line-height: 1.2;
@@ -181,26 +227,35 @@
   }
 
   @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 208px;
+    top: 40px;
+
     &::before {
+
+      
       width: 154px;
       content: '';
       position: absolute;
       outline: 1px solid rgba(0, 0, 0, 0.5);
       rotate: 90deg;
-      left: 105px;
-      top: 140px;
+      top: 101px;
+    left: -104px;
     }
   }
 
   @media screen and (min-width: 1200px) {
+    top: 40px;
+    left: 396px;
+
     &::before {
       width: 166px;
       content: '';
       position: absolute;
       outline: 1px solid rgba(0, 0, 0, 0.5);
       rotate: 90deg;
-      top: 125px;
-      left: 288px;
+      top: 94px;
+      left: -106px;
     }
   }
 }
@@ -218,14 +273,15 @@
 
   @media screen and (min-width: 768px) {
     width: 200px;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
     color: #000000;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     width: 267px;
     color: #3c322d;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -235,17 +291,19 @@
 .registration-form__item {
   width: 264px;
   width: 100%;
-  margin-bottom: 20px;
+
+  margin-top: 20px;
+  
 
   @media screen and (min-width: 768px) {
     width: 237px;
     height: 22px;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 237px;
-    margin-bottom: 14px;
+    // margin-bottom: 14px;
   }
 }
 
@@ -343,12 +401,12 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 102px;
-    left: 518px;
+    top: 63px;
+    left: 311px;
   }
 
   @media screen and (min-width: 1200px) {
-    top: 103px;
-    left: 657px;
+    top: 63px;
+    left: 255px;
   }
 }
