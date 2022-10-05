@@ -35,11 +35,11 @@ $('.slider').slick({
   infinite: true,
   arrows: true,
   centerPadding: '20px',
-  autoplay: true,
+  // autoplay: true,
   centerMode: true,
   useTransform: true,
   cssEase: 'linear',
-  autoplaySpeed: 1000,
+  // autoplaySpeed: 1000,
   // lazyLoad: 'ondemand',
   responsive: [
     {
