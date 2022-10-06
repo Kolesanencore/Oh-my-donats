@@ -46,6 +46,13 @@
     .slider__img-wrapper {
       width: 394px;
       height: 394px;
+      &:hover,
+      &:focus {
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scale(1.03);
+      }
       @media (max-width: 1200px) {
         height: 336px;
         width: 336px;

@@ -38,12 +38,12 @@ $('.slider').slick({
   slidesToScroll: 1,
   infinite: true,
   arrows: true,
-  centerPadding: '20px',
-  // autoplay: true,
+  centerPadding: '32px',
+  autoplay: true,
   centerMode: true,
   useTransform: true,
   cssEase: 'linear',
-  autoplaySpeed: 1000,
+  autoplaySpeed: 2200,
   lazyLoad: 'ondemand',
   responsive: [
     {
