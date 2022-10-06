@@ -7,6 +7,7 @@
     line-height: 39px;
     text-align: center;
     color: #2e2520;
+    margin-bottom: 28px;
   }
 
   &__slider {
@@ -86,4 +87,33 @@
   100% {
     opacity: 1;
   }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-image: url('../images/desktop/reviews/main-bgd-el_1x-min.png'),
+    linear-gradient(
+      180.11deg,
+      #e5e2e3 10.73%,
+      #fdfefe 38.02%,
+      #e5e2e3 71.11%,
+      #fdfefe 99.91%
+    );
+  z-index: 500;
+}
+
+.loaded_hiding .preloader {
+  transition: 10s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+  transition: 10s opacity;
+  opacity: 0;
 }

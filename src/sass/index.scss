@@ -3,8 +3,8 @@
 @import './base/common';
 @import './base/base';
 @import './base/container';
-@import './base/section';
-// Components
+// // Components
+@import './components/preloading';
 @import './components/burger';
 @import './components/button';
 @import './components/donut_logo';
@@ -12,8 +12,8 @@
 @import './components/backdrop';
 @import './components/slider';
 // Layout
+
 @import './layout/header';
-@import './layout/hero';
 @import './layout/about-us';
 @import './layout/program';
 @import './layout/speakers';

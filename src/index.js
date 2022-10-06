@@ -1,4 +1,5 @@
 // mobile menu script:
+
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
@@ -20,7 +21,8 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
-// END mobile menu script
+
+// rateYo Script:
 
 $('.rate').rateYo({
   starWidth: '24px',
@@ -28,6 +30,8 @@ $('.rate').rateYo({
   ratedFill: '#ffcc00',
   readOnly: true,
 });
+
+// slider Script
 
 $('.slider').slick({
   slidesToShow: 3,
@@ -39,8 +43,8 @@ $('.slider').slick({
   centerMode: true,
   useTransform: true,
   cssEase: 'linear',
-  // autoplaySpeed: 1000,
-  // lazyLoad: 'ondemand',
+  autoplaySpeed: 1000,
+  lazyLoad: 'ondemand',
   responsive: [
     {
       breakpoint: 1200,
