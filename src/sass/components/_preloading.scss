@@ -1,19 +1,12 @@
-// section.wrapper {
-//   padding: auto;
-// }
-
 .wrapper {
-  padding: 400px;
+  padding: 200px;
 }
-// section.wrapper.dark {
-//   background: #313134;
-// }
 
 div.spinner {
   animation: rotate 10s infinite linear;
   position: relative;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   width: 584px;
   height: 584px;
 }
