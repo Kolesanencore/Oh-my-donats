@@ -1,113 +1,113 @@
 .wrapper {
-  padding: 200px;
+  padding: 120px 0;
 }
 
-div.spinner {
+.spinner {
   animation: rotate 10s infinite linear;
   position: relative;
   display: block;
-  margin: 0 auto;
-  width: 584px;
-  height: 584px;
+  margin: auto;
+  width: 172px;
+  height: 172px;
 }
 
-div.spinner i {
+.spinner i {
   animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
   transform-origin: 50% 100% 0;
   position: absolute;
   display: inline-block;
   top: 50%;
   left: 50%;
-  border: solid 20px transparent;
+  border: solid 6px transparent;
   border-bottom: none;
 }
 
-div.spinner i:nth-child(1) {
+.spinner i:nth-child(1) {
   animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
-  width: 248px;
-  height: 124px;
-  margin-top: -124px;
-  margin-left: -124px;
+  width: 74px;
+  height: 37px;
+  margin-top: -37px;
+  margin-left: -37px;
   border-color: #2172b8;
-  border-top-left-radius: 220px;
-  border-top-right-radius: 220px;
+  border-top-left-radius: 66px;
+  border-top-right-radius: 66px;
 }
 
-div.spinner i:nth-child(2) {
+.spinner i:nth-child(2) {
   animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
-  width: 296px;
-  height: 148px;
-  margin-top: -148px;
-  margin-left: -148px;
+  width: 88px;
+  height: 44px;
+  margin-top: -44px;
+  margin-left: -44px;
   border-color: #18a39b;
-  border-top-left-radius: 240px;
-  border-top-right-radius: 240px;
+  border-top-left-radius: 72px;
+  border-top-right-radius: 72px;
 }
 
-div.spinner i:nth-child(3) {
+.spinner i:nth-child(3) {
   animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
-  width: 344px;
-  height: 172px;
-  margin-top: -172px;
-  margin-left: -172px;
+  width: 102px;
+  height: 51px;
+  margin-top: -51px;
+  margin-left: -51px;
   border-color: #82c545;
-  border-top-left-radius: 260px;
-  border-top-right-radius: 260px;
+  border-top-left-radius: 78px;
+  border-top-right-radius: 78px;
 }
 
-div.spinner i:nth-child(4) {
+.spinner i:nth-child(4) {
   animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
-  width: 392px;
-  height: 196px;
-  margin-top: -196px;
-  margin-left: -196px;
+  width: 116px;
+  height: 58px;
+  margin-top: -58px;
+  margin-left: -58px;
   border-color: #f8b739;
-  border-top-left-radius: 280px;
-  border-top-right-radius: 280px;
+  border-top-left-radius: 84px;
+  border-top-right-radius: 84px;
 }
 
-div.spinner i:nth-child(5) {
+.spinner i:nth-child(5) {
   animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
-  width: 440px;
-  height: 220px;
-  margin-top: -220px;
-  margin-left: -220px;
+  width: 130px;
+  height: 65px;
+  margin-top: -65px;
+  margin-left: -65px;
   border-color: #f06045;
-  border-top-left-radius: 300px;
-  border-top-right-radius: 300px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
 }
 
-div.spinner i:nth-child(6) {
+.spinner i:nth-child(6) {
   animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
-  width: 488px;
-  height: 244px;
-  margin-top: -244px;
-  margin-left: -244px;
+  width: 144px;
+  height: 72px;
+  margin-top: -72px;
+  margin-left: -72px;
   border-color: #ed2861;
-  border-top-left-radius: 320px;
-  border-top-right-radius: 320px;
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
 }
 
-div.spinner i:nth-child(7) {
+.spinner i:nth-child(7) {
   animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
-  width: 536px;
-  height: 268px;
-  margin-top: -268px;
-  margin-left: -268px;
+  width: 158px;
+  height: 79px;
+  margin-top: -79px;
+  margin-left: -79px;
   border-color: #c12680;
-  border-top-left-radius: 340px;
-  border-top-right-radius: 340px;
+  border-top-left-radius: 102px;
+  border-top-right-radius: 102px;
 }
 
-div.spinner i:nth-child(8) {
+.spinner i:nth-child(8) {
   animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
-  width: 584px;
-  height: 292px;
-  margin-top: -292px;
-  margin-left: -292px;
+  width: 172px;
+  height: 86px;
+  margin-top: -86px;
+  margin-left: -86px;
   border-color: #5d3191;
-  border-top-left-radius: 360px;
-  border-top-right-radius: 360px;
+  border-top-left-radius: 108px;
+  border-top-right-radius: 108px;
 }
 
 @-moz-keyframes rotate {
@@ -116,14 +116,12 @@ div.spinner i:nth-child(8) {
     transform: rotate(360deg);
   }
 }
-
 @-webkit-keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @keyframes rotate {
   to {
     -moz-transform: rotate(360deg);

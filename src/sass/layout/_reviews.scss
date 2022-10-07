@@ -116,7 +116,7 @@
 }
 
 .loaded_hiding .preloader {
-  transition: 10s opacity;
+  transition: 20s opacity;
   opacity: 0;
 }
 
@@ -125,7 +125,6 @@
 }
 
 .bounce-in-top {
-  -webkit-animation: bounce-in-top 1.1s both;
   animation: bounce-in-top 1.1s both;
 }
 
