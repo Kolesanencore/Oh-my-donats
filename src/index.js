@@ -35,15 +35,15 @@ $('.rate').rateYo({
 
 $('.slider').slick({
   slidesToShow: 3,
-  slidesToScroll: 1,
-  infinite: true,
+  // slidesToScroll: 1,
+  // infinite: true,
   arrows: true,
   centerPadding: '32px',
   // autoplay: true,
   centerMode: true,
   useTransform: true,
   cssEase: 'linear',
-  // autoplaySpeed: 2200,
+  speed: 1200,
   lazyLoad: 'ondemand',
   responsive: [
     {
